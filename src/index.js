@@ -1,17 +1,17 @@
-import './style.css';
-/*
-import UI from './modules/UI.js';
-import Store from './modules/localstorage.js';
+ import './style.css';
+
+ import UI from './modules/UI.js';
+ import Store from './modules/localstorage.js';
 import Todostatus from './modules/toDoStatus.js';
 
 // Event for Displaying the to do tasks
 document.addEventListener('DOMContentLoaded', UI.displayToDoList);
 
 // Event for adding new to do tasks
-document.querySelector('#todo-form').addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') {
+ document.querySelector('#todo-form').addEventListener('keypress', (e) => {
+   if (e.key === 'Enter') {
     e.preventDefault();
-    UI.getNewToDoTask();
+     UI.getNewToDoTask();
   }
 });
 
