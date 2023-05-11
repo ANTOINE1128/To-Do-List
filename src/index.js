@@ -1,17 +1,38 @@
+const toDoTasks = [
+  {
+    description: 'task one',
+    completed: false,
+    index: 0,
+  },
+  {
+    description: 'task two',
+    completed: true,
+    index: 1,
+  },
+  {
+    description: 'task tree',
+    completed: false,
+    index: 2,
+  },
+];
 
-// Event for Displaying the to do tasks
-document.addEventListener('DOMContentLoaded', UI.displayToDoList);
+// difining the UL id
+const listItem = document.getElementById('list-item');
 
-// Event for adding new to do tasks
- document.querySelector('#todo-form').addEventListener('keypress', (e) => {
-   if (e.key === 'Enter') {
-    e.preventDefault();
-     UI.getNewToDoTask();
+// loop through the array of obj and creat li for each
+toDoTasks.forEach((todo) => {
+  // Create a new li element
+  const listElement = document.createElement('li');
+  const spanElement = document.createElement('span');
+  spanElement.textContent = todo.description;
+
+  const checkboxElement = document.createElement('input');
+  checkboxElement.type = 'checkbox';
+  listElement.appendChild(checkboxElement);
+  listElement.appendChild(spanElement);
+
+  if (todo.completed) {
+    listItem.classList.add('completed');
   }
-});
-
-// Event for deleting new item for the list
-document.querySelector('#list-item').addEventListener('click', (e) => {
-  Store.removetodoTask(e.target);
-  UI.deletetodoTask(e.target);
+  listItem.appendChild(listElement);
 });
