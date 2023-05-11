@@ -1,3 +1,4 @@
+import './style.css';
 const toDoTasks = [
   {
     description: 'task one',
@@ -16,10 +17,10 @@ const toDoTasks = [
   },
 ];
 
-// difining the UL id
+// defining the UL id
 const listItem = document.getElementById('list-item');
 
-// loop through the array of obj and creat li for each
+// loop through the array of obj and create li for each
 toDoTasks.forEach((todo) => {
   // Create a new li element
   const listElement = document.createElement('li');

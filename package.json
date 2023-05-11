@@ -18,7 +18,7 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
-    "hint": "^7.1.8",
+    "hint": "^2.0.0",
     "html-webpack-plugin": "^5.5.1",
     "style-loader": "^3.3.2",
     "stylelint": "^13.13.1",
@@ -30,6 +30,9 @@
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "async_hooks": "^1.0.0",
+    "lodash": "^4.17.21",
+    "path-browserify": "^1.0.1",
+    "url": "^0.11.0"
   }
 }
