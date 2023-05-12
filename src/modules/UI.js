@@ -1,4 +1,4 @@
-import ToDo from './todo.js';
+import ToDo from './todotask.js';
 import Store from './LOCAL.js';
 
 class UI {
@@ -10,7 +10,7 @@ class UI {
   static getNewToDoTask = () => {
     const inputTask = document.querySelector('#input-list').value;
 
-    // valitation for empy form
+    // validation for empty form
     if (inputTask !== '') {
       const todo = new ToDo(inputTask);
 
