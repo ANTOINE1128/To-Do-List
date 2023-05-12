@@ -1,4 +1,4 @@
-import ToDo from './TODO.js';
+import ToDo from './todo.js';
 import Store from './LOCAL.js';
 
 class UI {
@@ -7,7 +7,7 @@ class UI {
       tasks.forEach((todo) => UI.addToList(todo));
     }
 
-  static getNewToDo = () => {
+  static getNewToDoTask = () => {
     const inputTask = document.querySelector('#input-list').value;
 
     // valitation for empy form
@@ -16,7 +16,7 @@ class UI {
 
       UI.addToList(todo);
 
-      Store.addtodoTask(todo);
+      Store.addtodo(todo);
 
       UI.clearFields();
     }

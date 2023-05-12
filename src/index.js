@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', UI.displayToDoList);
 document.querySelector('#todo-form').addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     e.preventDefault();
-    UI.getNewToDo();
+    UI.getNewToDoTask();
   }
 });
 
