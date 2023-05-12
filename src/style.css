@@ -100,7 +100,7 @@ ul li {
 
 .edit-list {
   width: 100%;
-  background-color: aquamarine;
+  background-color: lightgreen;
   border: none;
   outline: none;
   cursor: pointer;
@@ -110,7 +110,7 @@ ul li {
   width: 80%;
   padding: 12px;
   margin: 15px auto;
-  background-color: rgb(186, 185, 185);
+  background-color: lawngreen;
   font-size: 20px;
   border: none;
   border-radius: 4px;

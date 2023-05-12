@@ -1,13 +1,13 @@
-import ToDo from './toDo.js';
-import Store from './localstorage.js';
+import ToDo from './TODO.js';
+import Store from './LOCAL.js';
 
 class UI {
     static displayToDoList=() => {
-      const tasks = Store.gettodoTasks();
+      const tasks = Store.toDoLocal();
       tasks.forEach((todo) => UI.addTaskToList(todo));
     }
 
-  static getNewToDoTask = () => {
+  static getNewToDo = () => {
     const inputTask = document.querySelector('#input-list').value;
 
     // valitation for empy form
@@ -57,7 +57,7 @@ class UI {
     list.appendChild(li);
   }
 
-  static editeToDoTask = (element) => {
+  static editeToDo = (element) => {
     const mainValue = element.parentElement.parentElement.childNodes[1].textContent;
     const editForm = document.createElement('form');
     editForm.id = 'todo-form';
@@ -76,7 +76,7 @@ class UI {
     }
   }
 
-  static deletetodoTask = (element) => {
+  static deletetodo = (element) => {
     if (element.classList.contains('bi-trash3-fill')) {
       element.parentElement.parentElement.remove();
     }
