@@ -1,6 +1,6 @@
-<a name="webpack-template"></a>
+<a name="To-Do-List"></a>
 
-  <h1><b>webpack-template</b></h1>
+  <h1><b>To-Do-List</b></h1>
 
 </div>
 
@@ -26,10 +26,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [webpack-template] <a name="webpack-template"></a>
+# 📖 [To-Do-List] <a name="To-Do-List"></a>
 
-**[]**    !
-
+**[To-Do-List]**  is a project that will allow you to create a list of tasks that will be executed . 
 ## 🛠 Built With <a name="built-with"></a>
 
 - **[CSS]**
@@ -41,7 +40,7 @@
 - WebHint
 - Stylelint
 - Node Packet Manager
-
+- webpack
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -65,8 +64,11 @@ git clone https://github.com/ANTOINE1128/To-Do-List.git
 ## 👥 Authors <a name="authors"></a>
 
 👤 
- **Alijan Rahimi**
- **Antoine Makdessy**
+
+- **Alijan Rahimi**
+
+
+ -**Antoine Makdessy**
  
 
 - GitHub: [@ANTOINE1128](https://github.com/ANTOINE1128)
@@ -75,7 +77,7 @@ git clone https://github.com/ANTOINE1128/To-Do-List.git
 
 - [ add more pages ] 
 - [ add styling ]
-- [ add coding playground to it where where visitors can interact with ]
+- [ add coding playground to it where visitors can interact with ]
 
 ## 🤝 Contributing <a name="contributing"></a>
 
