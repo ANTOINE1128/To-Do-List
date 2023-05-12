@@ -4,7 +4,7 @@ import Store from './LOCAL.js';
 class UI {
     static displayToDoList=() => {
       const tasks = Store.toDoLocal();
-      tasks.forEach((todo) => UI.addTaskToList(todo));
+      tasks.forEach((todo) => UI.addToList(todo));
     }
 
   static getNewToDo = () => {
@@ -14,7 +14,7 @@ class UI {
     if (inputTask !== '') {
       const todo = new ToDo(inputTask);
 
-      UI.addTaskToList(todo);
+      UI.addToList(todo);
 
       Store.addtodoTask(todo);
 
@@ -22,7 +22,7 @@ class UI {
     }
   }
 
-  static addTaskToList = (todo) => {
+  static addToList = (todo) => {
     const list = document.querySelector('#list-item');
 
     const li = document.createElement('li');
